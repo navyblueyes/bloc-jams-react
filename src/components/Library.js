@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Library = () => (
-    <section className="library">
+ class Library extends Component { 
+   render() {
+   return ( 
+      <section className='library'>
         Library will go here
-    </section>
-);
+      </section>
+      /* Turning a component into a class allows us to control the state*/
+     );
+   }
+ }
 
 export default Library;
