@@ -1,4 +1,12 @@
 Notes for GitHub
   git add -A // To track all files
-  git commit -am "message" // To commit changes
+  git commit -am "Bloc Jams Audio Ckpt 2759" // To commit changes
   git push origin master // Push your local changes to github
+
+Notes for testing on CodeAnyWhere
+  sudo apt-get update
+  sudo apt-get install nodejs
+  sudo apt-get install npm
+  sudo npm install -g create-react-app
+  sudo npm install react-scripts --save
+  npm start

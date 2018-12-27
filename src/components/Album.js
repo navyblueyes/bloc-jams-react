@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import albumData from './../data/albums';
 
-
 class Album extends Component {
     constructor(props) {
         super(props);
@@ -16,59 +15,7 @@ class Album extends Component {
             currentTime: 0,
             duration: album.songs[0].duration,
             isPlaying: false,
-            hover: false,
-            volume: 0.8
         };
-
-        this.audioElement = document.createElement('audio');
-        this.audioElement.src = album.songs[0].audioSrc;
-    }
-
-    play() {
-        this.audioElement.play();
-        this.setState({ isPlaying: true });
-    }
-
-    pause() {
-        this.audioElement.pause();
-        this.setState({ isPlaying: false });
-    }
-
-    setSong(song) {
-        this.audioElement.src = song.audioSrc;
-        this.setState({ currentSong: song });
-    }
-
-    handleSongClick(song) {
-        const isSameSong = this.state.currentSong === song;
-        if (this.state.isPlaying && isSameSong) {
-            this.pause();
-        } else {
-            if (!isSameSong) { this.setSong(song); }
-            this.play();
-        }
-    }
-
-    hoverOn(index) {
-        this.setState({ hover: index });
-    }
-
-    hoverOff() {
-        this.setState({ hover: false });
-    }
-
-    handleHover(song, index) {
-        var pause = <ion-icon name="pause" />;
-        var play = <ion-icon name="play" />;
-        var isSameSong = this.state.currentSong === song;
-
-        if (this.state.isPlaying && isSameSong) {
-            return pause;
-        } else if (this.state.hover === index) {
-            return play;
-        } else {
-            return index + 1;
-        }
     }
 
     render() {
@@ -90,8 +37,8 @@ class Album extends Component {
                     </colgroup>
                     <tbody>
                     {this.state.album.songs.map((song, index) =>
-                        <tr onMouseEnter={() => this.hoverOn(index)}  onMouseLeave={() => this.hoverOff()} className="song" key={index} onClick={() => this.handleSongClick(song)} >
-                            <td>{this.handleHover(song, index)}</td>
+                        <tr>
+                            <td>{this.renderButton(song, index)}</td>
                             <td>{song.title}</td>
                             <td>{this.formatTime(song.duration)}</td>
                         </tr>
