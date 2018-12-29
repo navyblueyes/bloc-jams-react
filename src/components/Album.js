@@ -120,7 +120,7 @@ class Album extends Component {
                         <tr onMouseEnter={() => this.hoverOn(index)}  onMouseLeave={() => this.hoverOff()} className="song" key={index} onClick={() => this.handleSongClick(song)} >
                             <td>{this.renderButton(song, index)}</td>
                             <td>{song.title}</td>
-                            <td>{this.formatTime(song.duration)}</td>
+
                         </tr>
                     )
                     }
@@ -137,5 +137,4 @@ class Album extends Component {
         );
     }
 }
-
 export default Album;
