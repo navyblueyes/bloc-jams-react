@@ -12,8 +12,11 @@ class App extends Component {
             <div className="App">
                 <header>
                     <nav>
-                        <a href='/'><img class="logoButton" src="logo.png" /></a>
-                        <a href='/library' class="profile"><button>My Library</button></a>
+                        <Link to='/'><img class="logoButton" src="../assets/images/icon/logo.png" /></Link>
+                    </nav>
+                    <nav className="profile">
+                        <Link to='/library'><button>My Library</button></Link>
+                        <Link to='/library'><img src="../assets/images/icon/profile.png"/></Link>
                     </nav>
                 </header>
                 <main>
