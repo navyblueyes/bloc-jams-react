@@ -1,16 +1,38 @@
 html,
-body {
-  height: 100%;
+.landing {
   margin: 0;
   padding: 0;
+    background: url('../background/blocJamBackground.png') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
   }
+
+.library {
+    align-items: stretch;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('../assets/images/blurred_backgrounds/blur_bg_3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 40%;
+}
+
+.albumInfoCover {
+    width: 20px;
+    align-items: stretch;
+}
+
+.library .albumInfo {
+    width: 40%;
+    ;
+}
+
 
 .App {
   width: 100%;
-  background: url('data/background/blocJamBackground.png') no-repeat center center fixed;
-  background-size: cover;
-  background-position: center;
-  min-height: 600px;
 }
 
 .App header {
@@ -54,6 +76,14 @@ body {
 
 .profile button {
     ;
+}
+
+.point p {
+    margin: 5px;
+}
+
+.point h2 {
+    margin: 8PX;
 }
 
 .logoContainer img{

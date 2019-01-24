@@ -15,7 +15,6 @@ class App extends Component {
                         <Link to='/'><img class="logoButton" src="../assets/images/icon/logo.png" /></Link>
                     </nav>
                     <nav className="profile">
-                        <Link to='/library'><button>My Library</button></Link>
                         <Link to='/library'><img src="../assets/images/icon/profile.png"/></Link>
                     </nav>
                 </header>
