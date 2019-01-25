@@ -1,8 +1,8 @@
 html,
-.landing {
+.landing body{
   margin: 0;
   padding: 0;
-    background: url('../background/blocJamBackground.png') no-repeat center center fixed;
+    background: url('/assets/images/background/blocJamBackground.png') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -13,9 +13,8 @@ html,
     height: 100%;
     margin: 0;
     padding: 0;
-    background: url('../assets/images/blurred_backgrounds/blur_bg_3.jpg') no-repeat center center fixed;
+    background: url('/assets/images/blurred_backgrounds/blur_bg_3.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
     text-align: center;
     width: 40%;
 }

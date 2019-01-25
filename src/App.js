@@ -12,7 +12,7 @@ class App extends Component {
             <div className="App">
                 <header>
                     <nav>
-                        <Link to='/'><img class="logoButton" src="../assets/images/icon/logo.png" /></Link>
+                        <Link to='/'><img className="logoButton" src="../assets/images/icon/logo.png" /></Link>
                     </nav>
                     <nav className="profile">
                         <Link to='/library'><img src="../assets/images/icon/profile.png"/></Link>
